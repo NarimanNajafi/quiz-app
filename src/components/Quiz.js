@@ -5,7 +5,7 @@ import { useNotification } from './notifcatin';
 import errors from '../mock/errors';
 import cn from 'classnames';
 import Loading from './loading';
-import { useQuiz } from '../Provider/quiz';
+import { useQuiz } from '../provider/quiz';
 import Alert from './alert';
 
 const initialValues = {
