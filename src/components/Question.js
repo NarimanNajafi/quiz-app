@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useQuiz } from '../Provider/quiz';
+import { useQuiz } from '../provider/quiz';
 import Modal from './modal';
 
 const Question = () => {
