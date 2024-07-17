@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { useQuiz } from '../Provider/quiz';
+import { useQuiz } from '../provider/quiz';
 
 export default function Modal(props) {
   const { answers, questions, resetQuiz, resetLoading } = useQuiz();
