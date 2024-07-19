@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useQuiz } from './provider/quiz';
+import Question from './components/Question';
+import Quiz from './components/Quiz';
+import Breadcrumb from './components/breadcrumb';
 
 function App() {
+  const { sesstionToken, questions } = useQuiz();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Breadcrumb />
+      <div className="min-h-screen flex items-center justify-center mx-auto max-w-screen-xl">
+        {!sesstionToken && questions.length === 0 && <Quiz />}
+        {sesstionToken && <Question />}
+      </div>
+    </>
   );
 }
 
