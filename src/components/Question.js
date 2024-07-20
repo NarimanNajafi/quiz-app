@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useQuiz } from '../provider/quiz';
-import Modal from './modal';
+import Modal from './Model';
 
 const Question = () => {
   const { currentQuestion, questions, setAnswers, handleSetCurrentQuestion } =
