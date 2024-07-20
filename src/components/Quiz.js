@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { getCategories, createSessionToken, createQuiz } from '../api/services';
-import useFetch from '../hooks/useFetch';
+import useFetch from '../hooks/UseFetch';
 import { useNotification } from './notifcatin';
 import errors from '../mock/errors';
 import cn from 'classnames';
-import Loading from './loading';
+import Loading from './Loading';
 import { useQuiz } from '../provider/quiz';
-import Alert from './alert';
+import Alert from './Alert';
 
 const initialValues = {
   count: 10,
