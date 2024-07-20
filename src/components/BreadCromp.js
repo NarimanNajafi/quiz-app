@@ -1,8 +1,8 @@
 import { useQuiz } from '../provider/quiz';
-import { HomeIcon } from '../icons';
+import HomeIcon from '../icon/HomeIcon';
 import classNames from 'classnames';
-import Loading from './loading';
-import Skeleton from './skeleton';
+import Loading from './Loading';
+import Skeleton from './Skeleton';
 
 export default function Breadcrumb() {
   const {
