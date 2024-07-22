@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { getCategories, createSessionToken, createQuiz } from '../api/services';
-import useFetch from '../hooks/UseFetch';
-import { useNotification } from './notifcatin';
+import { getCategories, createSessionToken, createQuiz } from '../api/Service';
+import useFetch from '../hooks/useFetch';
+import { useNotification } from './Notification';
 import errors from '../mock/errors';
 import cn from 'classnames';
 import Loading from './Loading';
