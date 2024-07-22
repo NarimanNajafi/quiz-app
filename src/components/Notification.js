@@ -8,7 +8,7 @@ import {
   useState,
 } from 'react';
 import { Transition } from '@headlessui/react';
-import { CheckCircleIcon, ExclamationIcon, XMarkIcon } from '../icons';
+import { CheckCircleIcon, ExclamationIcon, XMarkIcon } from '../icon';
 import { useOnClickOutside } from 'usehooks-ts';
 import cn from 'classnames';
 
